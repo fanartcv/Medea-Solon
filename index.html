@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Throne — A Tribute to Medea Solon</title>
+<meta name="description" content="A personal tribute and admiration journal dedicated to Medea Solon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="marquee" aria-hidden="true"><div class="track" id="trackA"></div><div class="track" id="trackB"></div></div>
+<div class="progress" id="progress"></div>
+
+<nav class="nav" aria-label="Sections">
+  <a class="brand" href="#top">Your Throne</a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <ul id="menu">
+    <li><a href="#top">01 Above All</a></li><li><a href="#beauty">02 Beyond</a></li><li><a href="#mind">03 Mind</a></li>
+    <li><a href="#faces">04 Faces</a></li><li><a href="#letter">05 Letter</a></li><li><a href="#name">06 Name</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-copy reveal">
+    <p class="label">01 — The Woman Above All</p>
+    <h1>Your Throne</h1>
+    <p class="name">Medea Solon</p>
+    <p class="lead">Some people enter a room. She arranges it.</p>
+    <a class="btn" href="#beauty">Approach</a>
+  </div>
+  <figure class="hero-fig reveal">
+    <img src="assets/images/medea-crown.webp" width="462" height="1100" alt="Medea Solon wearing an amethyst crown, a chess piece raised to her lips" loading="eager" fetchpriority="high" decoding="async">
+  </figure>
+</header>
+
+<section class="beauty" id="beauty">
+  <figure class="beauty-fig reveal"><img src="assets/images/medea-commander.webp" width="667" height="1100" alt="Medea Solon in a gold-trimmed black military coat" loading="lazy" decoding="async"></figure>
+  <div class="beauty-copy">
+    <p class="label reveal">02 — Beyond Her Beauty</p>
+    <h2 class="reveal">Beauty is only the <em>first</em> thing you notice.</h2>
+    <div class="traits reveal">
+      <details open><summary>Composure</summary><p>Nothing about her looks rushed. Even in motion, she seems to have already decided how the moment ends.</p></details>
+      <details><summary>Presence</summary><p>Violet eyes, a steady gaze, a posture that asks for nothing. The room adjusts to her, not the reverse.</p></details>
+      <details><summary>Ambition</summary><p>She does not wait to be handed a place. Everything in her bearing says she means to hold it.</p></details>
+      <details><summary>Mystery</summary><p>Her smile is never an answer. It is a question she lets you carry home.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="mind" id="mind">
+  <div class="mind-copy">
+    <p class="label reveal">03 — A Mind Like No Other</p>
+    <blockquote class="quote reveal">“She does not play the piece in her hand. She plays the board.”</blockquote>
+    <div class="move reveal">
+      <p class="move-text" id="moveText" aria-live="polite">Her first move is always patience.</p>
+      <button class="btn" id="moveBtn">Her Next Move</button>
+    </div>
+  </div>
+  <figure class="mind-fig reveal"><img src="assets/images/medea-scholar.webp" width="736" height="736" alt="Medea Solon in round glasses resting her cheek on her hand beside a heavy book" loading="lazy" decoding="async"></figure>
+</section>
+
+<section class="faces" id="faces">
+  <p class="label reveal">04 — Her Many Faces</p>
+  <div class="faces-grid">
+    <figure class="stage reveal"><img id="stageImg" src="assets/images/medea-crown.webp" width="462" height="1100" alt="The Sovereign" loading="lazy" decoding="async"><figcaption id="stageCap"><strong>The Sovereign.</strong> Crowned, amused, entirely in control of the game.</figcaption></figure>
+    <div class="picker reveal" role="tablist" aria-label="Choose a portrait">
+      <button role="tab" aria-selected="true" data-k="crown" data-t="The Sovereign" data-d="Crowned, amused, entirely in control of the game."><img src="assets/images/tile-crown.webp" width="360" height="480" alt="" loading="lazy"><span>The Sovereign</span></button>
+      <button role="tab" aria-selected="false" data-k="commander" data-t="The Commander" data-d="Gold on black, eyes cold and level. She wears authority like a second skin."><img src="assets/images/tile-commander.webp" width="360" height="480" alt="" loading="lazy"><span>The Commander</span></button>
+      <button role="tab" aria-selected="false" data-k="smirk" data-t="The Provocateur" data-d="A tilted smile and a gaze that dares you to keep up."><img src="assets/images/tile-smirk.webp" width="360" height="480" alt="" loading="lazy"><span>The Provocateur</span></button>
+      <button role="tab" aria-selected="false" data-k="scholar" data-t="The Scholar" data-d="Glasses, ink, a thick book. Quiet hours are where her sharpest ideas are made."><img src="assets/images/tile-scholar.webp" width="360" height="480" alt="" loading="lazy"><span>The Scholar</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="letter" id="letter">
+  <p class="label reveal">05 — A Letter to Medea</p>
+  <button class="seal reveal" id="seal" aria-expanded="false" aria-controls="paper"><span>M</span><small>Break the seal</small></button>
+  <div class="paper-wrap" id="paper"><div class="paper">
+    <p>To Medea Solon,</p>
+    <p>I have admired many characters for being brave or kind. I admire you for being <em>certain</em>. You walk into every scene as if the ending were already written, and somehow you are the one holding the pen.</p>
+    <p>Thank you for the elegance, the cleverness, and the little smile that says there is more you have not told us. Never lower your crown for anyone who asks you to.</p>
+    <p class="sign">— Your admirer</p>
+  </div></div>
+</section>
+
+<footer class="name-sec" id="name">
+  <p class="label reveal">06 — An Unforgettable Name</p>
+  <button class="big-name reveal" id="bigName" aria-label="Reveal a line about Medea">Medea<br>Solon</button>
+  <p class="whisper" id="whisper" aria-live="polite">Say it once, and it stays.</p>
+  <a class="btn" href="#top" id="again">Return to the Throne</a>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
